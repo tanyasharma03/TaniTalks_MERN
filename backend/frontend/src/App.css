@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container-fluid
+{
+    padding: 0 6%;
+}
+/*------//  ---NAVBAR SECTION---   //-----*/
+.navbar-style {
+    background-color: #f8f9fa;
+    box-shadow: 2px 4px 13px 1px rgba(8, 8, 8, 0.04);
+    font-family: "Poppins";
+}
+.logo
+{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+    color: rgb(255, 103, 39);
+}
+
+/*------//  ---REGISTER AND LOGIN SECTION---  //------*/
+.signup-content,.signin-content
+{
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0px 20px 10px 4px rgba(151, 147, 147, 0.247);
+    border-radius: 4px;
+    padding: 4% 6%;
+    width: 70%;
+    background-color: #fff;
+}
+.form-group
+{
+    margin-top: 30px;
+    border-bottom: 2px solid rgba(153, 149, 149, 0.473);
+}
+
+.form-group input
+{
+  padding: 0 20px 10px 20px;
+  width: 90%;
+  font-size: 15px;
+  border: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+input::placeholder,textarea::placeholder
+{
+    font-size: 15px;
+    color: rgba(138, 129, 129, 0.459);
+}
+a,a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+figure
+{
+    margin-bottom: 0;
+}
+.signup-image img
+{
+  display: inline-block;
+  margin: 0 auto ;
+  width: 100%;
+  height: 400px;
+}
+.signup-image-link
+{
+    padding: 0 80px;
+    color: rgba(51, 44, 44, 0.438);
+    font-weight: 500;
+}
+.form-button input
+{
+    background-color: rgb(255, 103, 39);
+    padding: 10px 18px;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+.form-button:hover input
+{
+    transform: scale(1.06);
+    background-color: rgb(253, 84, 11);
+}
+
+/* -------//    --- CONTACT PAGE ---    //------ */
+
+.contact-info-item
+{
+    box-shadow: 10px 10px 20px 0px rgba(151, 147, 147, 0.247);
+    background-color: #fff;
+    margin: 25px auto;
+    padding: 10px 50px;
+    width: 90%;
+}
+.contact-info-item i
+{
+    margin: 0 25px 0 0;
+    color: rgb(255, 103, 39)
+}
+.contact-info-content h6
+{
+   margin: 5px 0;
+   font-weight: 600;
+}
+.contact-info-content p
+{
+    color: rgba(88, 85, 85, 0.575);
+}
+
+
+.contact-form, .about-form
+{
+    box-shadow: 5px 20px 10px 10px rgba(151, 147, 147, 0.247);
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 60%;
+    
+}
+.contact-form-container
+{
+    padding: 0 5%;
+}
+.contact-form h1
+{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.contact-input
+{
+    display: flex;
+}
+.contact-form input
+{
+    border: none;
+    box-shadow: 4px 2px 4px rgba(151, 147, 147, 0.247);
+    padding: 15px 18px;
+    margin: 0 8px;
+    font-size: 15px;
+}
+.contact-form-text textarea
+{
+  width: 700px;
+  height: 200px;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px 1px rgba(151, 147, 147, 0.247);
+  border: none;
+  border-radius: 4px;
+  resize: none;
+}
+/* ------ //  ----HOME PAGE---  // ------ */
+
+.home-page
+{
+    height: 91.6vh;
+    background: linear-gradient(90deg, rgba(250, 152, 109, 0.753) 50%, rgba(243, 236, 236, 0.904) 50%);
+}
+.home-page p
+{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 103, 39);
+}
+.home-page h1
+{
+    text-align: center;
+    font-weight: 800;
+    padding-top: 2%;
+    text-transform: capitalize;
+
+}
+.home-page h2
+{
+    text-align: center;
+    padding-top: 2%;
+    text-transform: capitalize;
+}
+
+/* ------ //  -----ABOUT PAGE-----  // -------- */
+.about-form .profile-img
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-form .profile-img img
+{
+    width: 220px;
+    height: 200px;
+}
+.about-form .profile-head h6
+{
+    color: rgb(255, 103, 39);
+    font-weight: 600;
+}
+.about-form .profile-head .nav-link.active
+{
+   color: rgba(128, 128, 128, 0.664);
+   font-weight: 600;
+}
+.about-form .profile-head .nav-link
+{
+    color: rgb(253, 84, 11);
+    font-weight: 600;
+}
+.about-form .profile-edit-btn
+{
+    border: none;
+    margin: 20px 0;
+   padding: 10px 15px;
+   color: rgba(0, 0, 0, 0.774);
+   transition: 0.5s;
+}
+.about-form .profile-edit-btn:hover
+{
+    transform: scale(0.9);
+}
+.about-form .profile-work p
+{
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: rgb(253, 84, 11);
+}
+.about-form .profile-work a
+{
+    display: block;
+    margin-top: 20px;
+    font-size: 17px;
+    color: rgba(138, 129, 129, 0.863);
+    font-weight: bold;
+    font-family: serif;
+}
+.about-form .tab-content
+{
+    height: 300px;
+}
+.about-form .tab-content label
+{
+    font-weight: 600;
+}
+.about-form .tab-content p
+{
+    color: rgb(253, 84, 11);
+    font-weight: 500;
+}
+
+/* -----// -----ERROR PAGE-----  //----- */
+
+#not-found
+{
+    position: relative;
+    height: 100vh;
+}
+
+#not-found .not-found
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.not-found{
+    max-width: 920px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.not-found .not-found-404
+{
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.not-found .not-found-404 h1
+{
+    color: #a5a5ac4b;
+    font-weight: 800;
+    font-size: 276px;
+    margin: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.not-found h2
+{
+    font-size: 46px;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.not-found p
+{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.not-found a
+{
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(255, 103, 39);
+    display: inline-block;
+    padding: 16px 38px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 400;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.not-found a:hover
+{
+    background-color: #fff;
+    border-color: rgb(253, 84, 11);
+    color: rgb(253, 84, 11);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ // ------- MEDIA QUERIES ------- // ------- */
+
+@media (max-width: 800px) 
+{
+    .signup-content,.signin-content
+    {
+        width: 80%;
+    }
+    .contact-form, .about-form
+    {
+        width: 80%;
+    }
+    .contact-input
+    {
+        display: block;
+    }
+    .contact-form input
+    {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .contact-form-text
+    {
+        display: flex;
+    }
+    .contact-form-text textarea
+    {
+        width: 100%;
+    }
+    .form-button input
+    {
+        width: 100%;
+    }
+    .signup-image-link
+    {
+        padding: 0 40px;
+    }
+    .home-page
+    {
+        height: 100vh;
+    }
+    .home-page p
+    {
+        padding-top: 45%;
+    }
+    .about-form .tab-content
+    {
+        height: 350px;
+    }
+}
+@media (max-width: 480px)
+{
+    .signup-image-link
+    {
+        padding: 0px 20px;
+    }
+    .about-form .profile-img
+    {
+        padding: 0;
+    }
+    .about-form .profile-img img
+    {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0;
+    }
+    .not-found .not-found-404 h1
+    {
+        font-size: 162px;
+    }
+    .not-found h2
+    {
+        font-size: 26px;
+    }
+    .home-page p
+    {
+        padding-top: 70%;
+    }
+} 
