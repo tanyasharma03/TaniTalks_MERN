@@ -31,7 +31,7 @@ const LoginForm = () => {
             setPassword("");
         }else{
             window.alert("Logged In successfully");
-            history.push(" https://tanitalks.herokuapp.com/");
+            history.push("/");
 
         }
     }

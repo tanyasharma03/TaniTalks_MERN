@@ -20,7 +20,7 @@ const Login = () => {
     const loginUser = async (event) =>{
         event.preventDefault();
 
-        const res = await fetch(' https://tanitalks.herokuapp.com/signin',{
+        const res = await fetch('/signin',{
             method: "POST",
             headers:{
                 "Content-Type" :"application/json"
@@ -40,7 +40,7 @@ const Login = () => {
         } else {
             dispatch({type:"USER", payload:true})
             window.alert("Logged In successfully");
-            history.push(" https://tanitalks.herokuapp.com/");
+            history.push("/");
 
         }
     }

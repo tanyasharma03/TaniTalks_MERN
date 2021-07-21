@@ -12,7 +12,7 @@ const User = require("../model/userSchema");
 //     res.send("Hello from  router");
 // });
 
-router.post(' https://tanitalks.herokuapp.com/register',async (req,res) => {
+router.post('/register',async (req,res) => {
     const {name, email, phone, work, password, cpassword} = req.body;
 
     //checking validation (all entries are fulfilled or not)
@@ -42,7 +42,7 @@ router.post(' https://tanitalks.herokuapp.com/register',async (req,res) => {
     }
 });
 
-router.post(' https://tanitalks.herokuapp.com/signin', async(req,res) =>{
+router.post('/signin', async(req,res) =>{
 
     try {
         const{email,password}=req.body;
@@ -86,25 +86,25 @@ router.post(' https://tanitalks.herokuapp.com/signin', async(req,res) =>{
  
 //----ABOUT AUTHENTICATION-----////
 
-router.get(" https://tanitalks.herokuapp.com/about",authenticate, (req,res)=> {
+router.get("/about",authenticate, (req,res)=> {
     res.send(req.userPresent);
   });
   
   
 //-----LOGOUT----////
-router.get(" https://tanitalks.herokuapp.com/logout",(req,res)=> {
+router.get("/logout",(req,res)=> {
     console.log("Logged Out");
     res.clearCookie("jwttoken",{path:"/"});
     res.status(200).send(req.userPresent);
   });
 
 //------Getting data for contact and home page------//
-router.get(" https://tanitalks.herokuapp.com/getData",authenticate,(req,res) =>{
+router.get("/getData",authenticate,(req,res) =>{
     res.send(req.userPresent);
 });
 
 
-router.post(" https://tanitalks.herokuapp.com/contact",authenticate, async (req,res)=> {
+router.post("/contact",authenticate, async (req,res)=> {
     try {
        const {name,phone,email,message}= req.body;
 

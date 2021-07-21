@@ -15,16 +15,16 @@ const Navbar = () => {
                   return (
                         <>
                              <li className="nav-item">
-                                   <NavLink className="nav-link" id="nav-link" to=" https://tanitalks.herokuapp.com/">Home</NavLink>
+                                   <NavLink className="nav-link" id="nav-link" to="/">Home</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/about">About</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/about">About</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/contact">Contact</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/contact">Contact</NavLink>
                               </li>
                               <li className="nav-item">
-                              <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/logout">Logout</NavLink>
+                              <NavLink className="nav-link"  id="nav-link" to="/logout">Logout</NavLink>
                               </li>
                        </>
                   )
@@ -32,19 +32,19 @@ const Navbar = () => {
                   return (
                         <>
                             <li className="nav-item">
-                                   <NavLink className="nav-link" id="nav-link" to=" https://tanitalks.herokuapp.com/">Home</NavLink>
+                                   <NavLink className="nav-link" id="nav-link" to="/">Home</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/about">About</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/about">About</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/contact">Contact</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/contact">Contact</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/signin">Login</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/signin">Login</NavLink>
                               </li>
                               <li className="nav-item">
-                                    <NavLink className="nav-link"  id="nav-link" to=" https://tanitalks.herokuapp.com/signup">Register</NavLink>
+                                    <NavLink className="nav-link"  id="nav-link" to="/signup">Register</NavLink>
                               </li>
                         </>
                   )

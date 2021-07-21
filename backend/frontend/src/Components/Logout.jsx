@@ -21,7 +21,7 @@ const Logout = () => {
             credentials:"include"
         }).then((res) => {
               dispatch({type:"USER", payload:false})
-              history.push(" https://tanitalks.herokuapp.com/signin", {replace: true});
+              history.push("/signin", {replace: true});
 
               if(!res.status === 200){
                   const error = new Error(res.error);
